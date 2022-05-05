@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="https://kit.fontawesome.com/79129b46ef.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <main>
+        <div class="nav-bar">
+            <nav>
+                <div class="logo">
+                    <span><i class="fa-solid fa-dumbbell"></i></span>
+                </div>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="plans.html">Plans</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <form action="https://formspree.io/f/xjvlpdln" method="POST">
+            <input type="text" name="First Name" placeholder="First Name" required>
+            <input type="text" name="Last Name" placeholder="Last Name" required>
+            <input type="email" name="Email" placeholder="Email ID" required>
+            <input type="number" name="Age" placeholder="Age" min = "0" max = "100" required>
+            <fieldset class = "gen">
+            <!-- <label for="gender">Gender</label> -->
+            <legend>Gender</legend>
+            <div class="gender">
+            <span>
+            <input type="radio" id = "male" name = "gender" value = "male"><label for="male">Male</label>
+            </span>
+            <span>
+            <input type="radio" id = "female" name = "gender" value = "female"><label for="female">Female</label>
+            </span>
+            </div>
+            </fieldset>
+            <fieldset class = "exercises">
+                <legend>Exercises you can do</legend>
+                <span><input type="checkbox" id = "ex1" name = "exercise" value = "push ups"><label for="ex1">Push ups</label></span>
+                <span><input type="checkbox" id = "ex2" name = "exercise" value = "squats"><label for="ex2">Squats</label></span>
+                <span><input type="checkbox" id = "ex3" name = "exercise" value = "burpees"><label for="ex3">Burpees</label></span>
+                <span><input type="checkbox" id = "ex4" name = "exercise" value = "running"><label for="ex4">Running</label></span>
+            </fieldset>
+            <button type = "submit">Submit</button>
+
+        </form>
+    </main>
+</body>
+</html>

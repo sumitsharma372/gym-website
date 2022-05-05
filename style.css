@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Khand:wght@400;500&family=Poppins:wght@400;500;700&family=Roboto:wght@300;400;500&family=Ubuntu:wght@400;500;700&display=swap');
+
+
+*{
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    list-style: none;
+    margin: 0 ;
+    padding: 0;
+    font-family: 'Poppins';
+
+}
+body{
+    background: url(./w2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    background-position: center;
+}
+
+.nav-bar {
+    background: #1e1f1e;
+    height: 3rem;
+    padding: 2rem 3rem;
+}
+.nav-bar nav {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    
+}
+.nav-bar ul {
+    height: 100%;
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.nav-bar ul li {
+    background-color: #343635;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    
+}
+.nav-bar ul li:hover {
+    background:#282929;
+}
+ul li a {
+    color: #cfcfcf;
+}
+.logo {
+    color: white;
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo span {
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 325px;
+    padding: 2rem 1rem;
+    border-radius: 10px;
+    background-color: aqua;
+    margin-top: 2rem;
+    margin-left: 2rem;
+    background-color: #2b2b2b;
+    transition: all 300ms ease;
+    
+}
+form:hover{
+    box-shadow: inset 0 0 1rem rgba(255, 255, 255, 0.15);
+    transform: scale(1.015);
+}
+form input {
+    padding: 5px;
+    border-radius: 5px;
+}
+fieldset.gen {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    border: 2px solid #3f403f;
+    border-radius: 5px;
+    padding: 8px 15px;
+}
+fieldset span {
+    display: flex;
+    gap: 5px;
+    justify-content: center;
+    align-items: center;
+}
+.gender {
+    display: flex;
+    gap: 1rem;
+}
+.exercises {
+    display: flex;
+    color: white;
+    flex-direction: column;
+    justify-content: center;
+    gap: 3px;
+    align-items: flex-start;
+    border-radius: 5px;
+    border: 2px solid #3f403f;
+    padding: 10px 15px;
+
+
+}
+button {
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    background: #b1b3b1;
+    font-weight: 500;
+}
+button:hover{
+    cursor: pointer;
+    background-color: #dcdedc;
+}
+.logo span:hover{
+    cursor: pointer;
+    background: #343635;
+}
+
+
+@media screen and (max-width: 600px) {
+    form {
+        width: 80%;
+        padding: 1rem 1rem;
+    }
+    .nav-bar{
+        width: 100%;
+        padding: 5px;
+    }
+    main {
+        width: 100%;
+    }
+    body{
+        width: 100%;
+        padding: 10px;
+    }
+    .nav-bar ul {
+        gap: 5px;
+    }
+    .nav-bar ul li {
+        padding: 5px;
+        font-size: 12px;
+
+    }
+
+    .logo span {
+        padding: 3px 10px;
+        font-size: 1.5rem;
+    }
+    
+}
